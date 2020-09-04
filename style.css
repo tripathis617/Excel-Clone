@@ -1,0 +1,102 @@
+html,body{
+    margin : 0px;
+    padding : 0px;
+    color: black;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+/* ?? */
+*{
+    box-sizing: border-box;
+}
+.ib{
+    display: inline-block;
+    text-align: center;
+}
+.menu{
+    height: 22px;
+    border : 1px solid black;
+}
+.menu-options{
+    height: 56px;
+    border : 1px solid black;
+}
+.menu-options-item{
+    display: none;
+}
+.selected{
+    display: block;
+}
+#File-options>div{
+    width: 50px;
+    text-align: center;
+}
+.menu-items{
+    width: 45px;
+    font-size: 90%;
+    text-align: center;
+}
+.formula-bar{
+    height: 26px;
+    border : 1px solid black;
+}
+.cell-container{
+    height: calc(100vh - 128px);
+    background-color: white;
+    overflow : auto;
+    position: relative;
+}
+.top-left-cell{
+    height: 30px;
+    width: 90px;
+    background-color: gray;
+    position: absolute;
+}
+.top-row{
+    display: flex;
+    position:  absolute;
+    left:  90px;
+    height: 30px;
+    top: 0px;
+    background-color:gray;
+    text-align: center;
+}
+.top-row>.cell{
+    min-width: 90px;
+    border: 1px solid;
+}
+.left-col{
+    position: absolute;
+    top: 30px;
+    width: 90px;
+}
+.left-col>.cell{
+    width: 90px;
+    height: 30px;
+    background-color: lightgray;
+    border: 1px solid;
+}
+.row{
+    display:flex;
+}
+.grid{
+    position: absolute;
+    top: 30px;
+    left: 90px;
+}
+.grid>.row>.cell{
+    min-width: 90px;
+    border: 1px solid black;
+    text-align: center;
+    min-height: 30px;
+}
+.sheets{
+    height: 24px;
+    border : 1px solid black;
+}
+
+/* .col{
+    height: 25px ;
+    border: 1px solid black;
+    min-width: 52px;
+} */
